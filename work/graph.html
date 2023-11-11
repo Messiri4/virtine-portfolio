@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7972ab75d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <!-- -------------- NAVIGATION BAR ---------------------- -->
+        <nav>
+            <a href="index.html" class="logo">miracle.</a>
+            <p>Portfolio 2023<p>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="work-title">
+            <h1>GRAPH</h1>
+        </div>
+        <div class="head-desc">
+            <div class="intro">
+                <p>DESCRIPTION</p>
+                <p>Engaging and interactive infographic design for a <br> financial consultancy, simplifying complex data into <br> visually appealing graphics.</p>
+                <p>Images by ls.graphics</p>
+            </div>
+            <div class="desc">
+                <ul>
+                    <li>Client</li>
+                    <li>Graph</li>
+                </ul>
+                <ul>
+                    <li>Year</li>
+                    <li>2022</li>
+                </ul>
+                <ul>
+                    <li>Type</li>
+                    <li>Branding</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- --------IMAGES----------- -->
+    <section>
+        <div class="image">
+            <img src="img/graph.png">
+        </div>
+        <div class="images">
+            <img src="img/envelope.png">
+            <img src="img/aesth.png">
+        </div>
+        <div class="image">
+            <img src="img/visage.png">
+        </div>
+        <div class="direction">
+            <a href=""><h1>PIXEL</h1>
+                <span>
+                    <i class="fa-solid fa-arrow-left"></i>
+                    PREVIOUS PROJECT
+                </span>
+            </a>
+            <a href=""><h1>AESTH</h1>
+                <span>
+                    NEXT PROJECT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- -----------CONTACT-------------- -->
+    <section class="contact" id="contact">
+        <h1>CONTACT</h1>
+        <p>Ready to bring your vision to life or just want to chat? Reach out, and <br> let's create something memorable together.<br><br>
+            I'm here to listen, collaborate, and craft design solutions that resonate.
+        </p>
+        <button type="button" onclick="myFunction()" id="myCopy">
+            <span id="copy-spn">HELLO@MIRACLE.COM</span>
+        </button>
+    </section>
+
+    <!-- -----------FOOTER-------------- -->
+    <section>
+        <div class="footer">
+            <p>miracle.</p>
+            <a href="index.html" class="temp">GET THIS TEMPLATE FOR FREE</a>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="">INSTAGRAM</a></li>
+                    <li><a href="">X(TWITTER)</a></li>
+                    <li><a href="">LINKEDIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.top = "50px";
+        }
+        function hideMenu(){
+            navLinks.style.top = "-200px";
+        }
+    </script>
+</body>
+</html>
